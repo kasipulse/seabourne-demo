@@ -87,6 +87,23 @@ export default function App() {
       <button onClick={handleScans}>Load Scans</button>
 
       <h2>Reconciliation</h2>
+
+<div style={{
+  background: "#ffe5e5",
+  padding: "10px",
+  borderRadius: "5px",
+  marginBottom: "10px"
+}}>
+  <b style={{ color: "#c1121f" }}>Missing:</b> {missing.join(", ") || "None"}
+</div>
+
+<div style={{
+  background: "#fff3cd",
+  padding: "10px",
+  borderRadius: "5px"
+}}>
+  <b style={{ color: "#ff8800" }}>Unexpected:</b> {extra.join(", ") || "None"}
+</div>
       <p><b>Missing:</b> {missing.join(", ") || "None"}</p>
       <p><b>Unexpected:</b> {extra.join(", ") || "None"}</p>
     </div>
