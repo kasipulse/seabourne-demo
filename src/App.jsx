@@ -31,7 +31,19 @@ export default function App() {
 
   return (
     <div style={{ padding: 20, fontFamily: "Arial" }}>
-      <h1>Seabourne Automation Demo 🚚</h1>
+      <div style={{ textAlign: "center", marginBottom: 20 }}>
+  <img 
+    src="https://res.cloudinary.com/dwxgkbuln/image/upload/v1771237770/OIP-removebg-preview_fdjhwc.png" 
+    alt="Seabourne Logo" 
+    style={{ height: 80 }}
+  />
+  <h1 style={{ color: "#c1121f", marginTop: 10 }}>
+    Seabourne Automation Demo
+  </h1>
+  <h3 style={{ color: "#555" }}>
+    Status: Live Integration Environment
+  </h3>
+</div>
       <h3>Status: Live Integration Environment</h3>
 
       <button onClick={loadOrders}>Sync Orders</button>
