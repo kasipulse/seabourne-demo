@@ -46,7 +46,20 @@ export default function App() {
 </div>
       <h3>Status: Live Integration Environment</h3>
 
-      <button onClick={loadOrders}>Sync Orders</button>
+      <button 
+  onClick={loadOrders}
+  style={{
+    backgroundColor: "#c1121f",
+    color: "white",
+    padding: "10px 15px",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    marginBottom: "10px"
+  }}
+>
+  Sync Orders
+</button>
 
       <h2>Orders</h2>
       <ul>
